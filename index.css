@@ -1,0 +1,127 @@
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --ornange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    font-size: 15px;
+
+
+}
+
+    
+    
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--very-light-gray);
+}
+
+.wrapper {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    max-width: 600px;
+}
+
+.thin {
+    font-weight: 200;
+    display: block;
+}
+
+.text {
+    color: var(--grayish-blue)
+}
+
+.card_top {
+    text-align: center;
+}
+
+.card_top h1 {
+    padding-bottom: 1.5rem;
+}
+
+.card_top .text {
+    padding-bottom: 4rem;
+}
+
+
+.box {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 5px 10px 5px rgba(0,0,0,0.1 );
+    margin-bottom: 2rem;
+}
+
+.box .text  {
+    padding: .65rem 0 1.3rem;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+
+
+.box .icon {
+    display: block;
+    margin-left: auto;
+}
+
+
+.first {
+    border-top: 4px solid var(--cyan);
+}
+
+.second {
+    border-top: 4px solid var(--red);
+}
+
+.third {
+    border-top: 4px solid var(--ornange);
+}
+
+.fourth {
+    border-top: 4px solid var(--blue);
+}
+
+@media (min-width: 800px){
+
+    .wrapper {
+        max-width: unset;
+    }
+    .main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main .box:first-child {
+        margin-bottom: 3rem;
+    }
+
+    .main > * {
+        width: 30%;
+    }
+
+    .box {
+        margin-left: 2rem;
+    }
+
+    .card_top .text {
+        margin: 0 auto;
+        max-width: 40%;
+    }
+
+    .card_top h1 {
+        font-size: 2rem;
+    }
+}
